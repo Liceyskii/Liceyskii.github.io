@@ -382,6 +382,9 @@
   }
 }
 @media (max-width: 768px) {
+  .body {
+    width: 100%;
+  }
   .bg-main {
     height: 900px;
     width: 100%;
@@ -470,5 +473,110 @@
   }
   .footer-img {
     display: block;
+  }
+}
+@media (max-width: 576px) {
+  .feature-header {
+    text-align: center;
+  }
+  .bg-feature {
+    background: url(../img/features/ft-bg.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .bg-pool {
+    background: url(../img/pool/pool-bg.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .bg-hookah {
+    background: url(../img/hookah/smoke-5129777.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .bg-ps {
+    background: url(../img/ps/bg-ps.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .footer-img {
+    display: block;
+  }
+  .body {
+    width: 100%;
+  }
+  .bg-main {
+    height: 900px;
+    width: 100%;
+  }
+  .main {
+    display: block;
+    text-align: center;
+  }
+  .main-logo {
+    margin-top: 50px;
+    width: 75%;
+  }
+  .main-content-header {
+    margin-top: 0;
+  }
+  .feature {
+    height: 2000px;
+  }
+  .feature-header {
+    font-size: 70px;
+    margin-left: 0;
+  }
+  .feature-box {
+    margin-left: 0;
+    text-align: center;
+  }
+  .feature-box-img {
+    margin-left: 0;
+  }
+  .feature-box-text {
+    margin-left: 20px;
+    padding: 20 0;
+    width: auto;
+  }
+  .pool-content-header {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .hookah-content-header {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .ps-content-header {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .footer {
+    height: 2200px;
+  }
+  .footer-header {
+    margin-top: 20px;
+    padding-top: 90px;
+    width: auto;
+    font-size: 60px;
+  }
+  .footer-timetable-number strong {
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+  .footer-timetable-adress {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  .footer-img {
+    display: inline-block;
+    text-align: center;
+    height: 150px;
+    width: auto;
+    margin-left: 33%;
+  }
+  .footer .map {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 18%;
   }
 }
