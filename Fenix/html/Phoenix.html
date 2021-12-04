@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" href="../img/main/Logo.png">
     <title>Клуб Phoenix - Бильярд, кальян, стация Силикатная</title>
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
-<body>
+<body class="body">
 
 
 
@@ -184,7 +185,7 @@
             </div>
             <div class="row">
 
-                    <div class="col-lg-1 offset-lg-1 col-md-2 offset-md-1 col-sm-2 offset-sm-2 col-xs-2 offset-xs-2">
+                    <div class="col-lg-1 offset-lg-1 col-md-2 offset-md-1 col-sm-2 offset-sm-0 col-xs-2 offset-xs-0">
                         <a href="https://www.instagram.com/Phoenix.podolsk/" target="_blank"> <img class="footer-img" src="../img/footer/inst.png" alt="Инстаграм"> </a>
                     </div>
                     <div class="col-lg-1 offset-lg-0 col-md-2 offset-md-0 col-sm-2 offset-sm-2 col-xs-2 offset-xs-2">
@@ -213,7 +214,17 @@
     wow.init();
 </script>
 
- 
+<script>
+
+    // Функция работы с классом
+    const classManager = () => {
+        if (window.innerWidth <= 768) document.querySelector(".section").classList.remove('parallax-window') // Если ширина экрана 480 или меньше убираем класс
+        else document.querySelector(".section").classList.add('parallax-window') // Иначе добавляем
+    }
+
+    window.addEventListener('resize', classManager) // Вешаем листенер чтоб функция срабатывала каждый раз при изменении разрешения
+    classManager() // И один раз вызываем при открытии страницы
+</script>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="../js/jquery.vide.min.js"></script> 
