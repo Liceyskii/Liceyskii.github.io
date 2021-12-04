@@ -580,3 +580,41 @@
     margin-left: 18%;
   }
 }
+@media (max-width: 492px) {
+  .footer-timetable-number {
+    text-align: center;
+    margin-left: 0;
+    font-size: 30px;
+  }
+  .footer-timetable {
+    text-align: center;
+  }
+  .map {
+    padding: 0;
+  }
+}
+@media (max-width: 411px) {
+  .footer-timetable-number strong {
+    text-align: center;
+    margin-left: 0;
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .bg-main {
+    height: 700px;
+  }
+  .main {
+    height: 700px;
+  }
+  .main-content-header {
+    font-size: 75px;
+  }
+  .bg-feature {
+    height: 1600px;
+  }
+  .map {
+    margin: 0;
+    padding: 0;
+  }
+}
