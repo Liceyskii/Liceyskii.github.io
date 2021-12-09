@@ -289,7 +289,7 @@
 }
 
 .map {
-    margin-left: 50px;
+    margin-left: 0;
     display: block;
 }
 .sect {
@@ -301,6 +301,10 @@
         &-header {
             margin-left: 0;
         }
+    }
+    .map {
+        width: 320px;
+        padding-right: 10%;
     }
 }
 
@@ -314,6 +318,9 @@
                 margin-left: 0;
             }
         }
+    }
+    .map {
+        width: 320px;
     }
 }
 @media (max-width: 1200px) {
@@ -569,6 +576,8 @@
             display: block;
         }
         .map {
+            width: 64%;
+            height: auto;
             text-align: center;
             margin-top: 50px;
             margin-left: 18%;
@@ -743,5 +752,8 @@
     .map {
         margin: 0;
         padding: 0;
+    }
+    #ymaps1639057876178899556 {
+        width: 100%;
     }
 }

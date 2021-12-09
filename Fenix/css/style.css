@@ -263,7 +263,7 @@
   /* Увеличиваем масштаб */
 }
 .map {
-  margin-left: 50px;
+  margin-left: 0;
   display: block;
 }
 .sect {
@@ -273,6 +273,10 @@
   .pool-header {
     margin-left: 0;
   }
+  .map {
+    width: 320px;
+    padding-right: 10%;
+  }
 }
 @media (max-width: 1400px) {
   .feature-header {
@@ -280,6 +284,9 @@
   }
   .feature-box-text {
     margin-left: 0;
+  }
+  .map {
+    width: 320px;
   }
 }
 @media (max-width: 1200px) {
@@ -479,6 +486,8 @@
     display: block;
   }
   .footer .map {
+    width: 64%;
+    height: auto;
     text-align: center;
     margin-top: 50px;
     margin-left: 18%;
@@ -625,5 +634,8 @@
   .map {
     margin: 0;
     padding: 0;
+  }
+  #ymaps1639057876178899556 {
+    width: 100%;
   }
 }
