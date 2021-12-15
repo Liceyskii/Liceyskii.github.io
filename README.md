@@ -1,7 +1,7 @@
 # Liceyskii.github.io
 
 
-Мой первый сайт
+Клуб Фараон - станция Силикатная
 
 
-[Бриз V](https://liceyskii.github.io/Github/V1/Briz%20V.html "Бриз V - Отбор Аудио-сетки")
+[Перейти на сайт](http://fenixpodolsk.ru/Fenix/html/Phoenix.html "Бриз V - Отбор Аудио-сетки")
