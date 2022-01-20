@@ -1,0 +1,28 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main {
+  height: 725px;
+  background: url(../img/backgroundlorem.png) no-repeat;
+  background-size: cover;
+  background-position: 100% 50%;
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
+  text-align: center;
+}
+.main img {
+  width: 500px;
+  margin-top: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-shadow: 1px 1px 5px black;
+}
+.main img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}

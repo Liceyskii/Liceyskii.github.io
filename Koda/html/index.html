@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Это Кхода</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+<div class="background" id="background-scene">
+    <img data-depth="0.3" src="../img/background.png" alt="background">
+</div>
+<div class="main">
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="music.html" class="header-link">МУЗЫКА</a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="concerts.html" class="header-link">КОНЦЕРТЫ</a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="merch.html" class="header-link">МЕРЧ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="KODA-scene">
+        <a data-depth="0.2" href="https://vk.com/koda_public" target="_blank">
+            <img src="../img/KODA.png" class="main-text" alt="KODA">
+        </a>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        let headerBgTitle = document.getElementById('background-scene');
+        let headerOffer = document.getElementById('KODA-scene');
+
+        let headerOfferInstance = new Parallax(headerOffer, {
+            pointerEvents: true
+        });
+        let headerBgTitleInstance = new Parallax(headerBgTitle, {
+            pointerEvents: true
+        });
+    </script>
+<style>
+    html,body {overflow:hidden}
+    </style>
+    <script>
+    document.onmousewheel = document.onwheel = function() {
+    return false;
+    };
+    
+    document.addEventListener ("MozMousePixelScroll",
+    function() { return false }, false);
+    
+    document.onkeydown = function(e) {
+    if (e.keyCode >= 33 && e.keyCode <= 40) return false;
+    }
+    </script>
+</body>
+</html>

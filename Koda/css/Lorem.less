@@ -1,0 +1,22 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.main {
+    height: 725px;
+    background: url(../img/backgroundlorem.png) no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    backdrop-filter: blur(55px);
+    text-align: center;
+    img {
+        width: 500px;
+        margin-top: 100px;
+        transition: 1s;
+        text-shadow: 1px 1px 5px black;
+    }
+    img:hover {
+        transform: scale(1.2);
+        filter: invert(1);
+    }
+}

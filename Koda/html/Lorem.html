@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Это Кхода</title>
+    <link rel="stylesheet" href="../css/Lorem.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+<body>
+<div class="main" id="main-scene">
+    <a  href="index.html" data-depth="0.4">
+        <img src="../img/lorem.jpg" alt="lorem">
+    </a>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        let headerBgTitle = document.getElementById('main-scene');
+        let headerBgTitleInstance = new Parallax(headerBgTitle, {
+            pointerEvents: true
+        });
+    </script>
+<style>
+    html,body {overflow:hidden}
+    </style>
+    <script>
+    document.onmousewheel = document.onwheel = function() {
+    return false;
+    };
+    
+    document.addEventListener ("MozMousePixelScroll",
+    function() { return false }, false);
+    
+    document.onkeydown = function(e) {
+    if (e.keyCode >= 33 && e.keyCode <= 40) return false;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Это Кхода</title>
+    <link rel="stylesheet" href="../css/merch.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <div class="background" id="background-scene">
+        <img data-depth="0.3" src="../img/backgroundmerch.png" alt="background">
+    </div>
+<div class="main">
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="music.html" class="header-link">МУЗЫКА</a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="concerts.html" class="header-link">КОНЦЕРТЫ</a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="index.html" class="header-link">ГЛАВНАЯ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row content">
+            <div class="col-lg-4 content">
+                <img src="../img/merch/1.png" class="img-main" alt="1">
+                <img src="../img/merch/KODA.png" class="img-picture" alt="KODA">
+                <a href="Lorem.html" class="link1">Худи KODA оверсайз</a>
+            </div>
+            <div class="col-lg-4 content">
+                <img src="../img/merch/2.png" class="img-main" alt="1">
+                <img src="../img/merch/kosmonaut1.png" class="img-picture2" alt="KODA">
+                <a href="Lorem.html" class="link2">Худи КОСМОНАВТ оверсайз</a>
+            </div>
+            <div class="col-lg-4 content">
+                <img src="../img/merch/3.png" class="img-main" alt="1">
+                <img src="../img/merch/Uriy.png" class="img-picture3" alt="KODA">
+                <a href="Lorem.html" class="link3">Худи ЮРА оверсайз</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        let headerBgTitle = document.getElementById('background-scene');
+        let headerBgTitleInstance = new Parallax(headerBgTitle, {
+            pointerEvents: true
+        });
+    </script>
+<style>
+    html,body {overflow:hidden}
+    </style>
+    <script>
+    document.onmousewheel = document.onwheel = function() {
+    return false;
+    };
+    
+    document.addEventListener ("MozMousePixelScroll",
+    function() { return false }, false);
+    
+    document.onkeydown = function(e) {
+    if (e.keyCode >= 33 && e.keyCode <= 40) return false;
+    }
+    </script>
+</body>
+</html>
