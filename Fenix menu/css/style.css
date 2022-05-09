@@ -30,7 +30,7 @@
 }
 .content-header {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 150px;
     font-family: 'Franklin Gothic', sans-serif;
     font-size: 50px;
     -webkit-text-stroke: 1px white;
@@ -52,4 +52,12 @@
         padding-top: 10%;
         font-size: 50px;
     }
+}
+@media (max-width: 1025px) {
+    .logo {
+        padding-right: 15px;
+    }
+}
+.content {
+    height: 2000px;
 }
